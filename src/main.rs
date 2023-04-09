@@ -24,9 +24,11 @@ struct Args {
     #[arg(short, long)]
     input: String,
 
+    ///Number of context lines to print 
     #[arg(short, long, default_value = "0")]
     ctx_lines: usize,
 
+    ///Print the line numbers along side the results
     #[arg(short = 'l', long, default_value = "false")]
     print_line_numbers: bool,
 
